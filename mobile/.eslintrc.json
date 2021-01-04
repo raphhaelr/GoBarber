@@ -30,6 +30,7 @@
   ],
   "rules": {
     "no-console": "off",
+    "no-shadow": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "prettier/prettier": "error",
     "@typescript-eslint/no-unused-vars": "off",
