@@ -19,11 +19,15 @@
     "prettier"
   ],
   "rules": {
+    "no-useless-constructor": "off",
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
-    "@typescript-eslint/no-unused-vars": ["error", {
-      "argsIgnorePattern": "_"
-    }],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "_"
+      }
+    ],
     "no-console": "off",
     "camelcase": "off",
     "import/extensions": [
@@ -31,6 +35,17 @@
       "ignorePackages",
       {
         "ts": "never"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
       }
     ]
   },
